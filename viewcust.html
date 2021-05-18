@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="viewcust.css">
+   
+    <title>Customers</title>
+    <style>
+      
+      .nav{
+       background: linear-gradient(to top left, #ff0066 25%, #ffcc66 90%);
+       height: 100px;
+       width: 100%;
+      }
+      th{
+       /* background: linear-gradient(to top left, #ff0066 20%, #ffcc66 80%); */
+       background-color: black;
+       color: white;
+        /* border: black solid 2px; */
+        font-size: 20px;
+        
+
+      }
+      .name{
+        font-size: 35px;
+        font-weight: 700;
+        font-family: 'Times New Roman', Times, serif;
+       
+      }
+      span a{
+        display: inline-block;
+         /* background-color: transparent; */
+         color: black;
+         
+         padding: 15px;
+         font-weight: 500;
+         font-size: 20px;
+         /* height: 50px;
+         width: 70px; */
+         /* background-color: black; */
+         
+      }
+      
+       
+   span a:hover{
+     background-color: black;
+     color: white;
+     text-decoration: none;
+   } 
+   tr:nth-child(even) {
+     background-color: rgba(200, 0, 0, 0.4);
+     /* background-color:  #ffff99 ; */
+   
+   }
+   /* tr:nth-child(odd) { */
+     /* background-color: rgba(255, 0, 0, 0.4); */
+     /* background-color:  #ffff99 ; */
+   
+   /* } */
+   div button ,td button{
+    background-color: black;
+    /* height: 100px;
+    width: 100%; */
+     text-align: center; 
+     color: white;
+     
+   }
+   button:hover
+   {
+     background-color: #ff0066;
+     color: #ffcc66;
+   }
+   
+   td{
+     font-size: 17px;
+     font-weight: 500;
+   }
+    </style>
+</head>
+<body>
+  <div class="nav">
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./splash.html">
+          <img src="./image/Logof.png" alt="" width="200" height="70" class="d-inline-block align-text-top">
+          
+        </a>
+        <br>
+        <span class="name"> GOLDEN HORIZON BANK</span>
+        <span style="margin-left: 20%;">
+          <a href="./index.html">Home</a>
+          </span>
+        <span>
+          <a href="./viewcust.html">Customers</a>
+          </span>
+        <span>
+          <a href="./viewrecord.php"> Transactions</a>
+         </span>
+        <span>
+          <a href="./aboutus.html">About Us</a>
+          </span>
+        <div style=" margin-left: 120rem;">
+          
+  
+        </div>
+        
+      </div>
+      
+    </nav>
+   </div>
+
+
+  <div class="container">
+    <h2 style="text-align: center;">Our Delighted Customers</h2>
+    <br>
+    <!-- <p>The .table-hover class enables a hover state on table rows:</p>             -->
+    <table class="table table-hover"style="border:black solid 2px; backround-color:transparent;">
+    
+
+      <thead>
+        <tr>
+          <th style="border: black solid 2px;">Cust_No</th>
+          <th style="border: black solid 2px;">Name</th>
+          <th style="border: black solid 2px;">Email</th>
+          <th style="border: black solid 2px;">Balance</th>
+          <th style="border: black solid 2px;">Account Type</th>
+          <th style="border: black solid 2px;">Action</th>
+          <th style="border: black solid 2px;">Cust_Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Anuja Joshi</td>
+          <td>anuja@gmail.com</td>
+          <td id="Anuja Joshi">20000</td>
+          <td>Saving</td>
+          <td>
+            <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Transfer</button>
+          </td>
+          <td>Silver</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Neeta Kale</td>
+            <td>neeta@gmail.com</td>
+            <td id="Neeta Kale">40000</td>
+            <td>Current</td>
+            <td>
+                <!-- <span class="btn btn-primary">transfer</span> -->
+                <span>
+                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Transfer</button>
+                </span>
+            </td>
+            <td>Gold</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Jethalal Gada</td>
+            <td>jethya@gmail.com</td>
+            <td id="Jethalal Gada">1500000</td>
+            <td>Saving</td>
+            <td>
+              <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Transfer</button>
+            </td>
+            <td>Platinum</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Mitali Jadhav</td>
+            <td>mits@gmail.com</td>
+            <td id="Mitali Jadhav">2000</td>
+            <td>Current</td>
+            <td>
+              <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Transfer</button>
+            </td>
+            <td>General</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Sundar Lal</td>
+            <td>sundar@gmail.com</td>
+            <td id="Sundar Lal">1500</td>
+            <td>Current</td>
+            <td>
+              <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Transfer</button>
+            </td>
+            <td>General</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Gayatri Khedkar</td>
+            <td>gayatri@gmail.com</td>
+            <td id="Gayatri Khedkar">200000</td>
+            <td>Current</td>
+            <td>
+              <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Transfer</button>
+            </td>
+            <td>Platinum</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Nilesh Vadkar</td>
+            <td>nilesh@gmail.com</td>
+            <td id="Nilesh Vadkar">84000</td>
+            <td>Saving</td>
+            <td>
+              <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Transfer</button>
+            </td>
+            <td>Gold</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Arjun Bankar</td>
+            <td>arjun@gmail.com</td>
+            <td id="Arjun Bankar">67000</td>
+            <td>Current</td>
+            <td>
+              <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Transfer</button>
+            </td>
+            <td>Gold</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Kavya Chakankar</td>
+            <td>kavya@gmail.com</td>
+            <td id="Kavya Chakankar">38500</td>
+            <td>Current</td>
+            <td>
+              <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Transfer</button>
+            </td>
+            <td>Silver</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Reva Dandekar</td>
+            <td>reva@gmail.com</td>
+            <td id="Reva Dandekar">5218</td>
+            <td>Saving</td>
+            <td>
+              <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Transfer</button>
+            </td>
+            <td>General</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+
+
+  <script>
+      $('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+
+function fun(){
+
+  var i = document.getElementById("recipient-name").value;
+  var j = document.getElementById("receiver-name").value;
+  var x = document.getElementById("amt").value;
+   var k = document.getElementById(i).innerHTML;
+   var l = document.getElementById(j).innerHTML;
+   
+    k=k - x;
+    l=parseInt(l)+ parseInt(x) ;
+   document.getElementById(i).innerHTML = k;
+   document.getElementById(j).innerHTML = l;
+    alert("verification completed.");
+    
+    window.open('./tform.php', '_blank');
+  // window.location.href = "form.html";
+
+}
+
+  </script>
+
+  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@asmi">Open modal for asmi</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+...more buttons... -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">New message to Check</h4>
+      </div>
+
+
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">Enter Your Name here</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="abc">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">Enter Receiver here</label>
+            <input type="text" class="form-control" id="receiver-name" placeholder="xyz">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Amout to be transferred</label>
+            <!-- <textarea class="form-control" id="message-text"></textarea> -->
+            <input type="number" class="form-control" id = "amt" placeholder="INR">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn" onclick="fun()">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<br><br>
+<div style="background-color: black;height: 100px;width: 100%; text-align: center; color: white;">
+  <br>
+  Main Branch : Senapati Bapat, Road Pune - 67.
+  <br>
+  https://www.instagram.com/goldenhorizonbank | www.goldenhorizonbank.com/support
+  <br>
+  @copyright : GayatriKhedkar</div>
+<!-- <div class="container mt-3">
+    <h2>Modal Example</h2>
+    
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+      Open modal
+    </button>
+  
+    
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        
+    
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button type="button" class="close" data-dismiss="modal">×</button>
+          </div>
+          
+          
+          <div class="modal-body">
+            Modal body..
+          </div>
+          
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div> -->
+  
+  
+</body>
+</html>
